@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>浄化フレグランスミスト | GENIEE FRAGRANCE</title>
+<meta name="description" content="心まで澄みわたる、浄化の香り。調香師Namiが15年の経験から生み出した浄化フレグランスミスト。空間・布用、10ml 4,300円（税込）。">
+<meta property="og:title" content="浄化フレグランスミスト | GENIEE FRAGRANCE">
+<meta property="og:description" content="心まで澄みわたる、浄化の香り。不要なものを手放し、澄んだ私へ。">
+<!-- 公開後、Netlifyのドメインに合わせて絶対URLにすると確実です（例: https://あなたのサイト.netlify.app/img/card01.jpg） -->
+<meta property="og:image" content="img/card01.jpg">
+<meta property="og:type" content="product">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:#0b0a09;color:#e8e2d6;
+    font-family:"Hiragino Mincho ProN","Yu Mincho",serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* LP本体：高画質カードを1カラムで縦に並べる */
+  .lp{
+    max-width:600px;margin:0 auto;background:#0b0a09;line-height:0;
+  }
+  .card{position:relative;display:block;}
+  .card img{display:block;width:100%;height:auto;}
+
+  /* 画像内の購入ボタンに重ねる透明リンク（カード内の相対位置） */
+  .hotspot{
+    position:absolute;display:block;border-radius:8px;z-index:2;
+    -webkit-tap-highlight-color:rgba(212,180,120,.25);
+  }
+  .hotspot--c1{left:5%;width:90%;top:87%;height:10%;}
+  .hotspot--c10{left:8%;width:84%;top:87%;height:10%;}
+
+  /* 追従する購入ボタン */
+  .sticky-cta{
+    position:fixed;left:50%;bottom:16px;transform:translateX(-50%) translateY(120%);
+    width:min(440px,92vw);z-index:50;line-height:normal;transition:transform .35s ease;
+  }
+  .sticky-cta.is-visible{transform:translateX(-50%) translateY(0);}
+  .sticky-cta a{
+    display:block;text-align:center;text-decoration:none;padding:16px 20px;
+    font-size:17px;letter-spacing:.08em;color:#1a1407;
+    background:linear-gradient(180deg,#e7cd97,#c8a45e);
+    border:1px solid #f0dcae;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.45);
+  }
+  .sticky-cta a:active{filter:brightness(.95)}
+  footer{
+    max-width:600px;margin:0 auto;padding:28px 20px 110px;text-align:center;
+    font-size:11px;line-height:1.9;color:#8c867a;letter-spacing:.05em;
+  }
+  footer a{color:#b9a878;text-decoration:none}
+</style>
+</head>
+<body>
+
+  <main class="lp">
+    <!-- 01 ヒーロー（購入ボタンあり） -->
+    <div class="card">
+      <img src="img/card01.jpg" alt="心まで澄みわたる、浄化の香り。GENIEE FRAGRANCE 浄化フレグランスミスト">
+      <a class="hotspot hotspot--c1 cta" href="#" aria-label="浄化ミストを購入する"></a>
+    </div>
+    <!-- 02 悩み訴求 -->
+    <div class="card"><img src="img/card02.jpg" alt="こんなこと、ありませんか？ 香りは目に見えないスイッチになります。"></div>
+    <!-- 03 香り構成 -->
+    <div class="card"><img src="img/card03.jpg" alt="清らかさの奥に、少しの神秘を。Top CITRUS / Middle HERBAL / Base GREEN"></div>
+    <!-- 04 浄化塩の素材 -->
+    <div class="card"><img src="img/card04.jpg" alt="浄化塩の素材。天然精油・セージ抽出物・浄化塩。"></div>
+    <!-- 05 生まれた理由 -->
+    <div class="card"><img src="img/card05.jpg" alt="浄化ミストが生まれた理由。15年間、香りの研究と調香に携わる中で。"></div>
+    <!-- 06 使用シーン -->
+    <div class="card"><img src="img/card06.jpg" alt="こんな場面でお使いください。人混み・モヤモヤ・外出・帰宅・日常の習慣に。"></div>
+    <!-- 07 調香師 Nami -->
+    <div class="card"><img src="img/card07.jpg" alt="調香師 Nami プロファイル。香りの設計歴15年。"></div>
+    <!-- 08 お客様の声 -->
+    <div class="card"><img src="img/card08.jpg" alt="お客様の声。空間がスッと整う感じがします。"></div>
+    <!-- 09 商品詳細 -->
+    <div class="card"><img src="img/card09.jpg" alt="浄化フレグランスミスト 商品詳細。内容量10ml 価格4,300円（税込）。"></div>
+    <!-- 10 最終CTA（購入ボタンあり） -->
+    <div class="card">
+      <img src="img/card10.jpg" alt="不要なものを手放し、澄んだ私へ。浄化ミストを購入する">
+      <a class="hotspot hotspot--c10 cta" href="#" aria-label="浄化ミストを購入する"></a>
+    </div>
+  </main>
+
+  <!-- スクロール時に出てくる追従購入ボタン -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#" class="cta">浄化ミストを購入する　→</a>
+  </div>
+
+  <footer>
+    GENIEE FRAGRANCE｜浄化フレグランスミスト<br>
+    調香師 Nami<br>
+    <a href="#">特定商取引法に基づく表記</a> ／ <a href="#">お問い合わせ</a>
+  </footer>
+
+<script>
+  // ▼ 購入リンク先
+  var PURCHASE_URL = "https://dream8store.official.ec/items/94220281";
+  var PURCHASE_TARGET = "_blank";
+
+  document.querySelectorAll('a.cta').forEach(function(el){
+    el.href = PURCHASE_URL; el.target = PURCHASE_TARGET; el.rel = "noopener noreferrer";
+  });
+
+  var sticky = document.getElementById('stickyCta');
+  function onScroll(){
+    if(window.scrollY > 400){ sticky.classList.add('is-visible'); }
+    else{ sticky.classList.remove('is-visible'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+</script>
+</body>
+</html>
